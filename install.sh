@@ -202,7 +202,7 @@ if [[ $BATCH_INSTALL == 0 ]]; then
 Do you want to automatically prepend the Torch install location
 to PATH and LD_LIBRARY_PATH in your $RC_FILE? (yes/no)
 [$DEFAULT] >>> "
-        read input
+        $input = "yes"
         if [[ $input == "" ]]; then
             input=$DEFAULT
         fi
